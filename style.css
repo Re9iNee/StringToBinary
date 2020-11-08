@@ -1,0 +1,121 @@
+/* Display */
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.divider {
+    align-self: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Paddings And Margins Widths And Heights */
+body {
+    margin: 0 auto;
+}
+
+body {
+    height: 100vh;
+}
+
+.results>* {
+    margin: 0 5px;
+}
+
+.results {
+    min-height: 150px;
+}
+
+.container {
+    margin: 12px;
+    padding: 12px;
+}
+
+.container>* {
+    padding: 12px;
+}
+
+.divider {
+    padding: 0;
+    margin-bottom: 12px;
+    min-width: 70%;
+}
+
+.input input {
+    padding: 12px;
+}
+
+/* Fonts And Typography */
+@font-face {
+    font-family: 'AvenirBook';
+    src: url('./extras/AvenirExtraLight copy.otf');
+}
+
+@font-face {
+    font-family: 'AvenirHeavy';
+    src: url('./extras/AvenirHeavy copy.otf');
+}
+
+body {
+    font-family: "AvenirHeavy";
+    color: #453937;
+}
+
+.header {
+    font-size: 24px;
+    color: #453937;
+}
+
+.input input::placeholder {
+    font-family: "AvenirBook";
+    font-size: 16px;
+}
+
+.input input {
+    font-size: 16px;
+}
+
+.results {
+    color: #B67269;
+    line-height: 22px;
+}
+
+
+/* Details */
+.container {
+    box-shadow: 0 1px 3px #464153;
+    border: 1px solid #979797;
+}
+
+.input input {
+    border: #453937 solid 1px;
+    border-radius: 3px;
+}
+
+.divider {
+    border: .1px solid #BDBDBD;
+}
+
+.results {
+    background-color: #31343D;
+    border-radius: 3px;
+    border: #979797 1px solid;
+}
