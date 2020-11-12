@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title>Convert String To Binary [Assignment]</title>
-    <link rel="stylesheet" href="">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./extras/favicon32.png">
     <link rel="stylesheet" href="style.css">
@@ -26,14 +25,14 @@
         </div>
 
     </div>
+    <script>
+        let app = angular.module('myApp', [])
+        app.filter('toBinary', () => {
+            return x => {
+                return (x >>> 0).toString(2);
+            }
+        })
+    </script>
 </body>
-<script>
-    let app = angular.module('myApp', [])
-    app.filter('toBinary', () => {
-        return x => {
-            return (x >>> 0).toString(2);
-        }
-    })
-</script>
 
 </html>
